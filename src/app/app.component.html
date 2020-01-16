@@ -19,10 +19,12 @@
 </div>
 
 <div>
-  <button>Generate</button>
+  <button (click)="onButtonClick()">Generate</button>
 </div>
 
 <div>
   <label for="your-password">Your Password</label>
-  <input type="text" id="your-password" />
+  <input type="text" id="your-password" [value]="password" />
 </div>
+
+{{ password }}
